@@ -1,0 +1,14 @@
+section {
+    max-width: 500px;
+    margin: 0 auto;
+    padding-top: 32px;
+    font-size: 20px;
+    color: #0fb9b9;
+    text-align: center;
+}
+
+img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}

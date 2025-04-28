@@ -1,0 +1,29 @@
+<div class="flex flex-col gap-2">
+    <h1 class="font-semibold text-5xl text-center">{{ name() }}</h1>
+
+    <p>Nombre</p>
+    <h1 class="text-3xl">{{ name() }}</h1>
+
+    <p>Edad</p>
+    <h1 class="text-3xl">{{ age() }}</h1>
+
+
+    <p>Método</p>
+    <h1 class="text-3xl">{{ heroDescripcion() }}</h1>
+
+    <p>Capitalizado</p>
+    <h1 class="text-3xl">{{ name() | uppercase }}</h1>
+    <h1 class="text-3xl">{{ capitalizedName() }}</h1>
+
+    <div class="flex justify-center gap-2 w-full">
+        <button (click)="changeHero()" class="button btn-next">
+            CAMBIAR NOMBRE
+        </button>
+        <button (click)="changeAge()" class="button btn-next">
+            CAMBIAR EDAD
+        </button>
+        <button (click)="resetForm()" class="button btn-next">
+            RESETEAR
+        </button>
+    </div>
+</div>

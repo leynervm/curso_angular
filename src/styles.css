@@ -1,1 +1,99 @@
+@import "tailwindcss";
+
 /* You can add global styles to this file, and also import other style files */
+:root {
+    color-scheme: light dark;
+}
+
+* {
+    font-family: 'Lucida Sans';
+    font-weight: 400;
+}
+
+form {
+    @apply flex flex-col gap-3 p-3 border rounded-2xl w-full;
+}
+
+form h1 {
+    @apply font-semibold text-[#0fb9b9];
+}
+
+input {
+    @apply block p-2.5 border border-[#0fb9b9] rounded-xl w-full;
+}
+
+form label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+
+.button {
+    @apply p-2.5 py-3 rounded-xl font-semibold text-xs;
+}
+
+.btn-next {
+    background: #0fb9b9;
+}
+
+.btn-blue {
+    background-color: #084892;
+}
+
+.btn-red {
+    background: #c52020;
+}
+
+.btn-green {
+    background: #03a742;
+}
+
+.text-red {
+    color: #c52020;
+}
+
+.text-green {
+    color: #03a742;
+}
+
+.text-blue {
+    color: #084892;
+}
+
+.button:disabled {
+    opacity: 0.75;
+}
+
+.text-error {
+    color: #ff5b5b;
+}
+
+.router-link-active {
+    @apply bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-white;
+}
+
+/* .ng-valid[required],
+.ng-valid.required {
+    border-left: 5px solid #42A948;
+}
+
+.ng-invalid:not(form) {
+    border-left: 2px solid #ff5b5b;
+}
+
+.alert div {
+    background-color: #fed3d3;
+    color: #820000;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: .5rem;
+}
+
+select {
+    width: 100%;
+    padding: .5rem;
+} */

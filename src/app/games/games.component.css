@@ -1,0 +1,13 @@
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+ul {
+    text-align: left;
+}
+
+ul li {
+    text-align: left;
+    font-size: 16px;
+}

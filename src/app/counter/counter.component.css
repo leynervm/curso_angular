@@ -1,0 +1,22 @@
+.content-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.content-button button {
+    padding: 8px 12px;
+    border-radius: .625rem;
+    outline: 0;
+    border: 0;
+    font-size: 18px;
+}
+
+.flex {
+    display: flex;
+    gap: 6px;
+}
+
+.mt-6 {
+    margin-top: 24px;
+}

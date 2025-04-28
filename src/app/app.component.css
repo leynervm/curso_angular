@@ -1,0 +1,11 @@
+h1 {
+  color: #0fb9b9;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+section {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}

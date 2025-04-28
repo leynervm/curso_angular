@@ -1,0 +1,37 @@
+<p>COUNTER ANGULAR</p>
+
+<div>
+    <div class="content-button">
+        <button (click)="decrement()" type="button">
+            -
+        </button>
+        <span>{{ count }}</span>
+        <span>Couner Signal :{{ counterSignal() }}</span>
+        <button (click)="increment()" type="button">
+            +
+        </button>
+    </div>
+
+    <div class="flex mt-6">
+        <button class="button btn-blue" (click)="setColor('text-blue')">
+            Button Blue
+        </button>
+        <button class="button btn-green" (click)="setColor('text-green')">
+            Button Green
+        </button>
+        <button class="button btn-red" (click)="setColor('text-red')">
+            Button Red
+        </button>
+    </div>
+
+    <div class="mt-6">
+        <button class="button btn-next" [disabled]="!enabledButton">
+            @if (enabledButton) {ENABLED}@else{DISABLED}
+        </button>
+    </div>
+
+
+    <p [class]="colorSelected" (click)="toggleEnabled(!enabledButton)">
+        TOGGLE BUTTON ENABLE / DISABLE
+    </p>
+</div>

@@ -1,0 +1,37 @@
+<div>
+
+    <form (submit)="onSubmit()" #formComment="ngForm">
+
+        <h1>Formulario de Plantilla</h1>
+
+        <div>
+            <label for="username">Usuario :</label>
+            <input id="username" name="username" type="text" [(ngModel)]="comment.username" required
+                #username="ngModel">
+
+            <small [hidden]="username.valid || username.pristine" class="text-error">
+                El nombre del usuario es obligatorio
+            </small>
+        </div>
+
+        <div>
+            <label for="comentario">Comentario:</label>
+            <input id="comentario" name="comentario" type="text" [(ngModel)]="comment.comentario" required
+                #comentario="ngModel">
+            <small [hidden]="comentario.valid || comentario.pristine" class="text-error">
+                El comentario del usuario es obligatorio
+            </small>
+        </div>
+
+        <button class="button btn-next" [disabled]="formComment.invalid">
+            ENVIAR
+        </button>
+
+    </form>
+    {{ formComment.valid }}
+
+    <p>Comentarios</p>
+    <img src="https://avatars.githubusercontent.com/u/137081906?v=4" alt="photo">
+
+
+</div>

@@ -1,0 +1,9 @@
+<div>
+    <ul class="list-disc list-inside">
+        @for (item of MessagesService.messages; track $index) {
+            <li>
+                {{ item }}
+            </li>
+        }
+    </ul>
+</div>

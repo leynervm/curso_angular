@@ -1,0 +1,47 @@
+<div class="mb-6 w-full">
+    <h1 class="font-semibold text-[#0fb9b9] text-3xl">Children Component - Envío de evento</h1>
+
+    <div class="">
+        <label for="name">Varaiable Received :</label>
+        <input id="received" type="text" [(ngModel)]="received" (keyup)="emitReceivedChange()">
+    </div>
+</div>
+
+<form [formGroup]="formUser" (submit)="onSubmit()">
+
+    <h1>Formulario Reactivo</h1>
+
+    <div>
+        <label for="name">Nombres :</label>
+        <input id="name" type="text" formControlName="name">
+
+        <small [hidden]="name.valid || name.pristine || name.value" class="text-error">
+            El nombre es obligatorio
+        </small>
+
+    </div>
+
+    <div>
+        <label for="email">Email:</label>
+        <input id="email" type="email" formControlName="email">
+
+        @if (email.invalid && (email.dirty || email.touched)) {
+        <div class="text-error">
+            @if (email.hasError('required')) {
+            <small>El email es obligatorio</small>
+            }
+            @if (email.hasError('email')) {
+            <small>El email debe ser de tipo email</small>
+            }
+        </div>
+        }
+    </div>
+
+    {{ formUser.get('name')?.value }}
+    <!-- {{ formUser.errors | json }} -->
+
+    <button class="button btn-next" [disabled]="formUser.invalid">
+        ENVIAR
+    </button>
+
+</form>

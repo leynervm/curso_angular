@@ -1,0 +1,10 @@
+<form (submit)="addMessage()">
+    <div class="w-full">
+        <label for="">Escribir mensaje :</label>
+        <input type="text" name="mensaje" [(ngModel)]="mensaje">
+    </div>
+
+    <button class="button btn-next" type="submit">
+        AGREGAR
+    </button>
+</form>
