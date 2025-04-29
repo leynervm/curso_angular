@@ -17,7 +17,7 @@
             @for (route of menuItems; track $index) {
             <li>
                 @if (route.children) {
-                <button type="button"
+                <button type="button" routerLinkActive="router-link-active" [routerLinkActiveOptions]="{exact: true}"
                     class="group flex items-center hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded-lg w-full text-gray-900 dark:text-white text-base transition duration-75"
                     aria-controls="submenu-id" data-collapse-toggle="submenu-id">
                     <svg class="w-5 h-5 text-gray-500 dark:group-hover:text-white dark:text-gray-400 group-hover:text-gray-900 transition duration-75 shrink-0"

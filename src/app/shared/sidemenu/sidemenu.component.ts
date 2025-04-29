@@ -5,8 +5,7 @@ import { RouterModule } from '@angular/router'
 @Component({
   selector: 'app-sidemenu',
   imports: [RouterModule],
-  templateUrl: './sidemenu.component.html',
-  styleUrl: './sidemenu.component.css'
+  templateUrl: './sidemenu.component.html'
 })
 export class SidemenuComponent {
   public menuItems = routes

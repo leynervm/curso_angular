@@ -72,11 +72,6 @@ export const routes: Routes = [
         path: 'view-transitions',
         title: 'Transiciones',
         component: ViewTransitionComponent
-      },
-      {
-        path: 'counter',
-        title: 'Counter',
-        component: CounterComponent
       }
     ]
   }

@@ -72,6 +72,15 @@ form label {
     @apply bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-white;
 }
 
+
+.navlink {
+    @apply inline-flex items-center gap-1 bg-neutral-700 p-1 rounded-md text-[#0fb9b9] text-xs;
+}
+
+.navlink-active {
+    @apply bg-[#0fb9b9] text-white;
+}
+
 /* .ng-valid[required],
 .ng-valid.required {
     border-left: 5px solid #42A948;
