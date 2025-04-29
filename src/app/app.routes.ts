@@ -10,6 +10,8 @@ import { UserComponent } from './user/user.component'
 import { UsersComponent } from './dashboard/pages/users/users.component'
 import { ViewTransitionComponent } from './dashboard/pages/view-transition/view-transition.component'
 import { SignalsComponent } from './dashboard/pages/signals/signals.component'
+import { DragonballComponent } from './dashboard/pages/dragonball/dragonball.component'
+import { DragonballSuperComponent } from './dashboard/pages/dragonball-super/dragonball-super.component'
 
 export const routes: Routes = [
   {
@@ -37,6 +39,16 @@ export const routes: Routes = [
             component: CounterComponent
           }
         ]
+      },
+      {
+        path: 'dragonball',
+        title: 'DragonBall',
+        component: DragonballComponent
+      },
+      {
+        path: 'dragonball-super',
+        title: 'DragonBall Super',
+        component: DragonballSuperComponent
       },
       {
         path: 'changue-detection',

@@ -1,0 +1,30 @@
+<div class="w-full">
+    <h1 class="text-center text-3xl font-semibold text-orange-500">DragonBall</h1>
+
+    <div class="w-full grid grid-cols-3 gap-3 mt-5">
+        <form class="" (submit)="submit()">
+            <div>
+                <label for="">PERSONAJE : </label>
+                <input type="text" class="block w-full" [value]="name()" (input)="name.set(txtName.value)" #txtName>
+            </div>
+            <div>
+                <label for="">PODER : </label>
+                <input type="number" class="block w-full" [value]="power()" (input)="power.set(txtPower.valueAsNumber)"
+                    #txtPower>
+            </div>
+            <button class="button btn-next" type="submit">
+                AGREGAR
+            </button>
+        </form>
+        <div class="w-full col-span-2">
+            <ol class="">
+                @for (item of characters(); track $index; let idx = $index) {
+                <li [class.text-blue-700]="item.power > 90000" [class.text-orange-600]="item.power < 90000">
+                    <span>{{idx +1}}.</span>
+                    {{item.name}} - <strong>{{item.power}}</strong>
+                </li>
+                }
+            </ol>
+        </div>
+    </div>
+</div>
